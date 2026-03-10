@@ -1,0 +1,4 @@
+address1 = Address(индекс1, город1, улица1, дом1, квартира1)
+address2 = Address(индекс2, город2, улица2, дом2, квартира2)
+mailing = Mailing(to_address=address1, from_address=address2, cost=500, track="TRACK123")
+print(f"Отправление {mailing.track} из {mailing.from_address} в {mailing.to_address}. Стоимость {mailing.cost} рублей.")
